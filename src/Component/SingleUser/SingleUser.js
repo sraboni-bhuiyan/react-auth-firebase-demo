@@ -8,11 +8,11 @@ const SingleUser = ({user}) => {
 
     return (
         <div className="col-4 gy-2">
-            <div class="card shadow p-3 mb-5 bg-body rounded">
-            <div class="card-body">
-                <h5 class="card-title">{name}</h5>
-                <h6 class="card-subtitle mb-2 text-muted">{id}</h6>
-                <Link to='/'>Link</Link>
+            <div className="card shadow p-3 mb-5 bg-body rounded">
+            <div className="card-body">
+                <h5 className="card-title">{name}</h5>
+                <h6 className="card-subtitle mb-2 text-muted">{id}</h6>
+                <Link to={`/user/${id}`}>User Info</Link>
                 </div>
             </div>
         </div>
