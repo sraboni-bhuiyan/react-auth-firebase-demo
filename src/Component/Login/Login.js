@@ -39,11 +39,12 @@ const Login = () => {
 
     const handleSubmit = (event)=>{
         event.preventDefault();
-        if(userInfo.password !== userInfo.confirmPassword){
-            setErrorMessage('password does not match')
-            return;
-        }
+        
         if(!login){
+            if(userInfo.password !== userInfo.confirmPassword){
+                setErrorMessage('password does not match')
+                return;
+            }
             setErrorMessage('');
             createUserWithEmailAndPassword(userInfo.email, userInfo.password);
         }
