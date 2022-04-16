@@ -10,7 +10,7 @@ const UserInfo = () => {
 
 
     return (
-        <div>
+        <div className='container'>
             <SingleUser user={allUsers[0]}>
                 {
                     {email: allUsers[0]?.email,
